@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp
+ros/ros.h
+/home/zach/src/AirSim/ros/src/shell_simulation/src/ros/ros.h
+airsim_car_ros_pkgs
+/home/zach/src/AirSim/ros/src/shell_simulation/src/airsim_car_ros_pkgs
+

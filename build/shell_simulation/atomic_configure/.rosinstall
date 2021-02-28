@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zach/src/AirSim/ros/devel/.private/shell_simulation/setup.sh

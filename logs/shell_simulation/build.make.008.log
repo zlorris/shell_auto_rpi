@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target shell_simulation_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/shell_simulation_node.dir/src/car_control.cpp.o[0m
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kairsim_car_ros_pkgs: No such file or directory
+ #include [01;31m[K"airsim_car_ros_pkgs"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+CMakeFiles/shell_simulation_node.dir/build.make:62: recipe for target 'CMakeFiles/shell_simulation_node.dir/src/car_control.cpp.o' failed
+make[2]: *** [CMakeFiles/shell_simulation_node.dir/src/car_control.cpp.o] Error 1
+CMakeFiles/Makefile2:291: recipe for target 'CMakeFiles/shell_simulation_node.dir/all' failed
+make[1]: *** [CMakeFiles/shell_simulation_node.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

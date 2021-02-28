@@ -1,0 +1,3 @@
+Symlinking /home/zach/src/AirSim/ros/devel/lib/pkgconfig/shell_simulation.pc
+Symlinking /home/zach/src/AirSim/ros/devel/share/shell_simulation/cmake/shell_simulationConfig.cmake
+Symlinking /home/zach/src/AirSim/ros/devel/share/shell_simulation/cmake/shell_simulationConfig-version.cmake
