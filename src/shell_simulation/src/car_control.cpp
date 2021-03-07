@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include <airsim_car_ros_pkgs>
+#include <airsim_car_ros_pkgs/CarCmd.h>
 
 int main(int argc, char **argv)
 {
@@ -40,8 +40,6 @@ int main(int argc, char **argv)
      * This is a message object. You stuff it with data, and then publish it.
      */
     airsim_car_ros_pkgs::CarCmd throttle;
-
-    throttle = [1.0, 0.0, 0.0, false, false, 0, true]
 
     /**
      * The publish() function is how you send messages. The parameter
