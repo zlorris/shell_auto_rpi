@@ -1,0 +1,34 @@
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:49:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::Publisher::publish(double, double, double, bool, bool, int, bool)[m[K’
+     throttle_pub.publish(1.0, 0.0, 0.0, false, false, 0, true[01;31m[K)[m[K;
+                                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/publisher.h:64:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> void ros::Publisher::publish(const boost::shared_ptr<X>&) const[m[K’
+       void [01;36m[Kpublish[m[K(const boost::shared_ptr<M>& message) const
+            [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/publisher.h:64:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:49:62:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<X>[m[K’ and ‘[01m[Kdouble[m[K’
+     throttle_pub.publish(1.0, 0.0, 0.0, false, false, 0, true[01;36m[K)[m[K;
+                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/publisher.h:96:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> void ros::Publisher::publish(const M&) const[m[K’
+       void [01;36m[Kpublish[m[K(const M& message) const
+            [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/publisher.h:96:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:49:62:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+     throttle_pub.publish(1.0, 0.0, 0.0, false, false, 0, true[01;36m[K)[m[K;
+                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/publisher.h:172:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::Publisher::publish(const boost::function<ros::SerializedMessage()>&, ros::SerializedMessage&) const[m[K’
+     void [01;36m[Kpublish[m[K(const boost::function<SerializedMessage(void)>& serfunc, SerializedMessage& m) const;
+          [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/publisher.h:172:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 7 provided
+make[2]: *** [CMakeFiles/car_control.dir/src/car_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/car_control.dir/all] Error 2
+make: *** [all] Error 2

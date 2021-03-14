@@ -1,0 +1,5 @@
+/usr/bin/ld: cannot find -lairsim_car_ros_pkgs
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/zach/src/AirSim/ros/devel/.private/shell_simulation/lib/shell_simulation/car_control] Error 1
+make[1]: *** [CMakeFiles/car_control.dir/all] Error 2
+make: *** [all] Error 2

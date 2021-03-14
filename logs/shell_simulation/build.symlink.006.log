@@ -1,0 +1,19 @@
+Symlinking /home/zach/src/AirSim/ros/devel/lib/shell_simulation/car_control
+Symlinking /home/zach/src/AirSim/ros/devel/lib/python2.7/dist-packages/shell_simulation/__init__.py
+Symlinking /home/zach/src/AirSim/ros/devel/lib/python2.7/dist-packages/shell_simulation/msg/__init__.py
+Symlinking /home/zach/src/AirSim/ros/devel/lib/python2.7/dist-packages/shell_simulation/msg/_CarCmd.py
+Linked: (/home/zach/src/AirSim/ros/devel/.private/shell_simulation/lib/pkgconfig/shell_simulation.pc, /home/zach/src/AirSim/ros/devel/lib/pkgconfig/shell_simulation.pc)
+Linked: (/home/zach/src/AirSim/ros/devel/.private/shell_simulation/share/shell_simulation/cmake/shell_simulationConfig.cmake, /home/zach/src/AirSim/ros/devel/share/shell_simulation/cmake/shell_simulationConfig.cmake)
+Linked: (/home/zach/src/AirSim/ros/devel/.private/shell_simulation/share/shell_simulation/cmake/shell_simulationConfig-version.cmake, /home/zach/src/AirSim/ros/devel/share/shell_simulation/cmake/shell_simulationConfig-version.cmake)
+Symlinking /home/zach/src/AirSim/ros/devel/share/shell_simulation/cmake/shell_simulation-msg-paths.cmake
+Symlinking /home/zach/src/AirSim/ros/devel/share/shell_simulation/cmake/shell_simulation-msg-extras.cmake
+Symlinking /home/zach/src/AirSim/ros/devel/share/common-lisp/ros/shell_simulation/msg/CarCmd.lisp
+Symlinking /home/zach/src/AirSim/ros/devel/share/common-lisp/ros/shell_simulation/msg/_package_CarCmd.lisp
+Symlinking /home/zach/src/AirSim/ros/devel/share/common-lisp/ros/shell_simulation/msg/shell_simulation-msg.asd
+Symlinking /home/zach/src/AirSim/ros/devel/share/common-lisp/ros/shell_simulation/msg/_package.lisp
+Symlinking /home/zach/src/AirSim/ros/devel/share/gennodejs/ros/shell_simulation/_index.js
+Symlinking /home/zach/src/AirSim/ros/devel/share/gennodejs/ros/shell_simulation/msg/CarCmd.js
+Symlinking /home/zach/src/AirSim/ros/devel/share/gennodejs/ros/shell_simulation/msg/_index.js
+Symlinking /home/zach/src/AirSim/ros/devel/share/roseus/ros/shell_simulation/manifest.l
+Symlinking /home/zach/src/AirSim/ros/devel/share/roseus/ros/shell_simulation/msg/CarCmd.l
+Symlinking /home/zach/src/AirSim/ros/devel/include/shell_simulation/CarCmd.h

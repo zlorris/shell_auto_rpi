@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named car_control
+
+# Build rule for target.
+car_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 car_control
+.PHONY : car_control
+
+# fast build rule for target.
+car_control/fast:
+	$(MAKE) -f CMakeFiles/car_control.dir/build.make CMakeFiles/car_control.dir/build
+.PHONY : car_control/fast
+
+#=============================================================================
 # Target rules for targets named airsim_car_ros_pkgs_generate_messages_py
 
 # Build rule for target.
@@ -257,19 +270,6 @@ doxygen: cmake_check_build_system
 doxygen/fast:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
 .PHONY : doxygen/fast
-
-#=============================================================================
-# Target rules for targets named shell_simulation_node
-
-# Build rule for target.
-shell_simulation_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shell_simulation_node
-.PHONY : shell_simulation_node
-
-# fast build rule for target.
-shell_simulation_node/fast:
-	$(MAKE) -f CMakeFiles/shell_simulation_node.dir/build.make CMakeFiles/shell_simulation_node.dir/build
-.PHONY : shell_simulation_node/fast
 
 #=============================================================================
 # Target rules for targets named clean_test_results
@@ -563,7 +563,7 @@ src/car_control.o: src/car_control.cpp.o
 
 # target to build an object file
 src/car_control.cpp.o:
-	$(MAKE) -f CMakeFiles/shell_simulation_node.dir/build.make CMakeFiles/shell_simulation_node.dir/src/car_control.cpp.o
+	$(MAKE) -f CMakeFiles/car_control.dir/build.make CMakeFiles/car_control.dir/src/car_control.cpp.o
 .PHONY : src/car_control.cpp.o
 
 src/car_control.i: src/car_control.cpp.i
@@ -572,7 +572,7 @@ src/car_control.i: src/car_control.cpp.i
 
 # target to preprocess a source file
 src/car_control.cpp.i:
-	$(MAKE) -f CMakeFiles/shell_simulation_node.dir/build.make CMakeFiles/shell_simulation_node.dir/src/car_control.cpp.i
+	$(MAKE) -f CMakeFiles/car_control.dir/build.make CMakeFiles/car_control.dir/src/car_control.cpp.i
 .PHONY : src/car_control.cpp.i
 
 src/car_control.s: src/car_control.cpp.s
@@ -581,7 +581,7 @@ src/car_control.s: src/car_control.cpp.s
 
 # target to generate assembly for a file
 src/car_control.cpp.s:
-	$(MAKE) -f CMakeFiles/shell_simulation_node.dir/build.make CMakeFiles/shell_simulation_node.dir/src/car_control.cpp.s
+	$(MAKE) -f CMakeFiles/car_control.dir/build.make CMakeFiles/car_control.dir/src/car_control.cpp.s
 .PHONY : src/car_control.cpp.s
 
 # Help Target
@@ -592,6 +592,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... test"
+	@echo "... car_control"
 	@echo "... airsim_car_ros_pkgs_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... airsim_car_ros_pkgs_generate_messages_nodejs"
@@ -601,7 +602,6 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... install/local"
 	@echo "... doxygen"
-	@echo "... shell_simulation_node"
 	@echo "... clean_test_results"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... run_tests"

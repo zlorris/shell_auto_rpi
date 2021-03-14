@@ -1,0 +1,44 @@
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:27:45:[m[K [01;31m[Kerror: [m[K‘[01m[KCarCmd[m[K’ was not declared in this scope
+   ros::Publisher throttle_pub = n.advertise<[01;31m[KCarCmd[m[K.msg>("/airsim_node/PhysXCar/car_cmd_body_frame", 1);
+                                             [01;31m[K^~~~~~[m[K
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:27:102:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<<expression error> >(const char [41], int)[m[K’
+   ros::Publisher throttle_pub = n.advertise<CarCmd.msg>("/airsim_node/PhysXCar/car_cmd_body_frame", 1[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:27:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   ros::Publisher throttle_pub = n.advertise<CarCmd.msg>("/airsim_node/PhysXCar/car_cmd_body_frame", 1[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:27:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   ros::Publisher throttle_pub = n.advertise<CarCmd.msg>("/airsim_node/PhysXCar/car_cmd_body_frame", 1[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kthrottle[m[K’ was not declared in this scope
+     [01;31m[Kthrottle[m[K = [1.0, 0.0, 0.0, false, false, 0, true]
+     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:43:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kthrottle_pub[m[K’
+     [01;36m[Kthrottle[m[K = [1.0, 0.0, 0.0, false, false, 0, true]
+     [01;36m[K^~~~~~~~[m[K
+     [32m[Kthrottle_pub[m[K
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:43:17:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+     throttle = [[01;31m[K1.0[m[K, 0.0, 0.0, false, false, 0, true]
+                 [01;31m[K^~~[m[K
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:43:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+     throttle = [1.0[01;31m[K,[m[K 0.0, 0.0, false, false, 0, true]
+                    [01;31m[K^[m[K
+                    [32m[K][m[K
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:[m[K In lambda function:
+[01m[K/home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp:43:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+make[2]: *** [CMakeFiles/car_control.dir/src/car_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/car_control.dir/all] Error 2
+make: *** [all] Error 2

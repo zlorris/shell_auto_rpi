@@ -53,7 +53,7 @@
   <exec_depend>message_runtime</exec_depend>
   <depend>roscpp</depend>
   <depend>rospy</depend>
-  <build_depend>std_msgs</build_depend>
+  <depend>std_msgs</depend>
   <depend>airsim_car_ros_pkgs</depend>
 
 

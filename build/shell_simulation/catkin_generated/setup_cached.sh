@@ -11,5 +11,6 @@ export CMAKE_PREFIX_PATH="/home/zach/src/AirSim/ros/devel/.private/shell_simulat
 export LD_LIBRARY_PATH="/home/zach/src/AirSim/ros/devel/.private/shell_simulation/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/zach/src/AirSim/ros/devel/.private/shell_simulation/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/zach/src/AirSim/ros/build/shell_simulation'
+export PYTHONPATH="/home/zach/src/AirSim/ros/devel/.private/shell_simulation/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/zach/src/AirSim/ros/devel/.private/shell_simulation/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/zach/src/AirSim/ros/src/shell_simulation:$ROS_PACKAGE_PATH"

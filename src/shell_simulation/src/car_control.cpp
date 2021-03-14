@@ -1,60 +1,28 @@
 #include "ros/ros.h"
-#include <airsim_car_ros_pkgs/CarCmd.h>
+#include "airsim_car_ros_pkgs/CarCmd.h"
+#include <iostream>
+#include <thread>
+#include <chrono>
 
 int main(int argc, char **argv)
 {
 
   ros::init(argc, argv, "car_control");
 
+  // Initialize Publishers/Subscribers
   ros::NodeHandle n;
+  ros::Publisher control = n.advertise<airsim_car_ros_pkgs::CarCmd>("/airsim_node/PhysXCar/car_cmd_body_frame", 1);
+  while (!control.getNumSubscribers());
 
-  /**
-   * The advertise() function is how you tell ROS that you want to
-   * publish on a given topic name. This invokes a call to the ROS
-   * master node, which keeps a registry of who is publishing and who
-   * is subscribing. After this advertise() call is made, the master
-   * node will notify anyone who is trying to subscribe to this topic name,
-   * and they will in turn negotiate a peer-to-peer connection with this
-   * node.  advertise() returns a Publisher object which allows you to
-   * publish messages on that topic through a call to publish().  Once
-   * all copies of the returned Publisher object are destroyed, the topic
-   * will be automatically unadvertised.
-   *
-   * The second parameter to advertise() is the size of the message queue
-   * used for publishing messages.  If messages are published more quickly
-   * than we can send them, the number here specifies how many messages to
-   * buffer up before throwing some away.
-   */
-  ros::Publisher throttle_pub = n.advertise<airsim_car_ros_pkgs::CarCmd>("/airsim_node/PhysXCar/car_cmd_body_frame", 1);
+  // Car Control Commands
+  airsim_car_ros_pkgs::CarCmd cmd;
+    
+  cmd.throttle = 1.0;
+  cmd.gear_immediate = true;
 
-  ros::Rate loop_rate(10);
+  control.publish(cmd);
 
-  /**
-   * A count of how many messages we have sent. This is used to create
-   * a unique string for each message.
-   */
-  int count = 0;
-  while (ros::ok())
-  {
-    /**
-     * This is a message object. You stuff it with data, and then publish it.
-     */
-    airsim_car_ros_pkgs::CarCmd throttle;
-
-    /**
-     * The publish() function is how you send messages. The parameter
-     * is the message object. The type of this object must agree with the type
-     * given as a template parameter to the advertise<>() call, as was done
-     * in the constructor above.
-     */
-    throttle_pub.publish(throttle);
-
-    ros::spinOnce();
-
-    loop_rate.sleep();
-    ++count;
-  }
-
+  std::cout << "Finished." << std::endl;
 
   return 0;
 }

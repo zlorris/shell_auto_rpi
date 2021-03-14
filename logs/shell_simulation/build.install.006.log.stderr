@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:167 (file):
+  file INSTALL cannot find
+  "/home/zach/src/AirSim/ros/src/shell_simulation/include/shell_simulation".
+
+
+make: *** [install] Error 1

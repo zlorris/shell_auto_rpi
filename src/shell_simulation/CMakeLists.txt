@@ -13,7 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS std_msgs airsim_car_ros_pkgs
+  CATKIN_DEPENDS roscpp std_msgs airsim_car_ros_pkgs
 )
 
 ###########
@@ -52,10 +52,10 @@ add_executable(
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(car_control airsim_car_ros_pkgs)
+add_dependencies(car_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(
+target_link_libraries(car_control
   ${catkin_LIBRARIES}
 )
 
@@ -75,7 +75,7 @@ target_link_libraries(
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-install(TARGETS
+install(TARGETS car_control
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -88,9 +88,9 @@ install(TARGETS
 # )
 
 ## Mark cpp header files for installation
-install(DIRECTORY include/${PROJECT_NAME}/
-  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-)
+#install(DIRECTORY include/${PROJECT_NAME}/
+#  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+#)
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 install(DIRECTORY
