@@ -2,14 +2,14 @@
 [36mInstall the project...[0m
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/zach/src/AirSim/ros/install/_setup_util.py
--- Up-to-date: /home/zach/src/AirSim/ros/install/env.sh
--- Up-to-date: /home/zach/src/AirSim/ros/install/setup.bash
--- Up-to-date: /home/zach/src/AirSim/ros/install/local_setup.bash
--- Up-to-date: /home/zach/src/AirSim/ros/install/setup.sh
--- Up-to-date: /home/zach/src/AirSim/ros/install/local_setup.sh
--- Up-to-date: /home/zach/src/AirSim/ros/install/setup.zsh
--- Up-to-date: /home/zach/src/AirSim/ros/install/local_setup.zsh
--- Up-to-date: /home/zach/src/AirSim/ros/install/.rosinstall
+-- Installing: /home/zach/src/AirSim/ros/install/env.sh
+-- Installing: /home/zach/src/AirSim/ros/install/setup.bash
+-- Installing: /home/zach/src/AirSim/ros/install/local_setup.bash
+-- Installing: /home/zach/src/AirSim/ros/install/setup.sh
+-- Installing: /home/zach/src/AirSim/ros/install/local_setup.sh
+-- Installing: /home/zach/src/AirSim/ros/install/setup.zsh
+-- Installing: /home/zach/src/AirSim/ros/install/local_setup.zsh
+-- Installing: /home/zach/src/AirSim/ros/install/.rosinstall
 -- Up-to-date: /home/zach/src/AirSim/ros/install/lib/pkgconfig/simple_airsim_interface.pc
 -- Up-to-date: /home/zach/src/AirSim/ros/install/share/simple_airsim_interface/cmake/simple_airsim_interfaceConfig.cmake
 -- Up-to-date: /home/zach/src/AirSim/ros/install/share/simple_airsim_interface/cmake/simple_airsim_interfaceConfig-version.cmake

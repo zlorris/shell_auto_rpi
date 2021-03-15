@@ -12,3 +12,4 @@
 /home/zach/src/AirSim/ros/install/share/shell_simulation/cmake/shell_simulationConfig-version.cmake
 /home/zach/src/AirSim/ros/install/share/shell_simulation/package.xml
 /home/zach/src/AirSim/ros/install/lib/shell_simulation/car_control
+/home/zach/src/AirSim/ros/install/lib/shell_simulation/image_process

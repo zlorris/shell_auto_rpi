@@ -1,10 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(shell_simulation)
 
+find_package(OpenCV REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS 
 	roscpp 
 	std_msgs
 	airsim_car_ros_pkgs
+	sensor_msgs
+	image_transport
+	cv_bridge
 )
 
 ## System dependencies are found with CMake's conventions
@@ -13,7 +18,13 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS roscpp std_msgs airsim_car_ros_pkgs
+  CATKIN_DEPENDS 
+  roscpp 
+  std_msgs 
+  airsim_car_ros_pkgs
+  sensor_msgs
+  image_transport
+  cv_bridge
 )
 
 ###########
@@ -41,7 +52,10 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(
-    car_control src/car_control.cpp
+  car_control src/car_control.cpp
+)
+add_executable(
+	image_process src/image_process.cpp
 )
 
 ## Rename C++ executable without prefix
@@ -53,11 +67,15 @@ add_executable(
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(car_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(image_process ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(car_control
-  ${catkin_LIBRARIES}
+target_link_libraries(car_control 
+	${catkin_LIBRARIES}
 )
+target_link_libraries(image_process 
+	${OpenCV_LIBRARIES} 
+	${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -75,7 +93,7 @@ target_link_libraries(car_control
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-install(TARGETS car_control
+install(TARGETS car_control image_process
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

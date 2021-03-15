@@ -24,10 +24,8 @@ ros/message_operations.h
 
 /home/zach/src/AirSim/ros/src/shell_simulation/src/car_control.cpp
 ros/ros.h
-/home/zach/src/AirSim/ros/src/shell_simulation/src/ros/ros.h
+-
 airsim_car_ros_pkgs/CarCmd.h
-/home/zach/src/AirSim/ros/src/shell_simulation/src/airsim_car_ros_pkgs/CarCmd.h
-iostream
 -
 thread
 -

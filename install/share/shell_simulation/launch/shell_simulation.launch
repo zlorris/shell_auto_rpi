@@ -21,4 +21,10 @@
   			output="screen"
  	/>
 
+ 	<node pkg="shell_simulation"
+ 				name="image_process"
+ 				type="image_process"
+ 				output="screen"
+ 	/>
+
 </launch>

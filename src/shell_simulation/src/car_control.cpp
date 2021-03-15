@@ -1,6 +1,5 @@
-#include "ros/ros.h"
-#include "airsim_car_ros_pkgs/CarCmd.h"
-#include <iostream>
+#include <ros/ros.h>
+#include <airsim_car_ros_pkgs/CarCmd.h>
 #include <thread>
 #include <chrono>
 
