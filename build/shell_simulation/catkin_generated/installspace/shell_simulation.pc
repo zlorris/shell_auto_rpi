@@ -1,8 +1,0 @@
-prefix=/home/zach/src/AirSim/ros/install
-
-Name: shell_simulation
-Description: Description of shell_simulation
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp std_msgs airsim_car_ros_pkgs sensor_msgs image_transport cv_bridge

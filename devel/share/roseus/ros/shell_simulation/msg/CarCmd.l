@@ -1,1 +1,0 @@
-/home/zach/src/AirSim/ros/devel/.private/shell_simulation/share/roseus/ros/shell_simulation/msg/CarCmd.l

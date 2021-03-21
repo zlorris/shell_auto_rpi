@@ -1,6 +1,0 @@
-[31m[1mCMake Error[0m at /home/zach/src/AirSim/ros/src/shell_simulation/CMakeLists.txt:58 (target_link_libraries):
-  Cannot specify link libraries for target "shell_simulation_node" which is
-  not built by this project.
-
-
-make: *** [cmake_check_build_system] Error 1

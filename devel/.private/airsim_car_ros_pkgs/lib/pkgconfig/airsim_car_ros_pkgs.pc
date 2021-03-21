@@ -1,8 +1,0 @@
-prefix=/home/zach/src/AirSim/ros/devel/.private/airsim_car_ros_pkgs
-
-Name: airsim_car_ros_pkgs
-Description: Description of airsim_car_ros_pkgs
-Version: 0.0.1
-Cflags: -I/home/zach/src/AirSim/ros/devel/.private/airsim_car_ros_pkgs/include -I/home/zach/src/AirSim/ros/src/airsim_car_ros_pkgs/include
-Libs: -L${prefix}/lib -lairsim_car_ros
-Requires: message_runtime roscpp std_msgs

@@ -1,1 +1,0 @@
-/home/zach/src/AirSim/ros/devel/.private/shell_simulation/share/gennodejs/ros/shell_simulation/_index.js

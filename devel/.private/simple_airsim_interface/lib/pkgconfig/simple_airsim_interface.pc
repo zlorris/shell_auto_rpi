@@ -1,8 +1,0 @@
-prefix=/home/zach/src/AirSim/ros/devel/.private/simple_airsim_interface
-
-Name: simple_airsim_interface
-Description: Description of simple_airsim_interface
-Version: 0.0.1
-Cflags: -I/home/zach/src/AirSim/ros/src/simple_airsim_interface/include
-Libs: -L${prefix}/lib 
-Requires: cv_bridge image_transport roscpp rospy sensor_msgs std_msgs

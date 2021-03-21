@@ -1,6 +1,0 @@
-devel_space: /home/zach/src/AirSim/ros/devel
-install: true
-install_space: /home/zach/src/AirSim/ros/install
-profile: default
-source_space: /home/zach/src/AirSim/ros/src
-workspace: /home/zach/src/AirSim/ros

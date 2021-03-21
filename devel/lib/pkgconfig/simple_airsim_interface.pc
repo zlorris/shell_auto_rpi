@@ -1,1 +1,0 @@
-/home/zach/src/AirSim/ros/devel/.private/simple_airsim_interface/lib/pkgconfig/simple_airsim_interface.pc
